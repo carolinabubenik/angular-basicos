@@ -1,0 +1,29 @@
+
+
+<h1>Dragon Ball</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-personajes [data]="personajes" >
+            
+        </app-personajes>
+        <!-- <h3>Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let pers of personajes" >
+                {{pers.nombre}} - {{pers.poder | number}}
+            </li>
+        </ul> -->
+    </div>
+
+<!-- Los pipes sirven para indicar como mostrar la informacion (formato) -->
+            <!-- <li>Goku - 15,000</li> -->
+            <!-- <li>Vegeta - 8,500</li> -->
+
+    <div class="col">
+        <app-agregar [nuevo]="nuevo" [personajes]="personajes"></app-agregar>
+    </div>
+
+
+</div>
